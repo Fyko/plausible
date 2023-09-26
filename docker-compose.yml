@@ -35,6 +35,9 @@ services:
       - mail
     ports:
       - 8000:8000
+    environment:
+      - BASE_URL
+      - SECRET_KEY_BASE
 
 volumes:
   db-data:
